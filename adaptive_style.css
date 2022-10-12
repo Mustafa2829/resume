@@ -1,0 +1,8 @@
+@media all and(max-width: 768){
+    .section_block__img img{
+        height: 30%;
+        width: 30%;
+    }
+
+    
+}

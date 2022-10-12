@@ -1,0 +1,233 @@
+body {
+    background-image: linear-gradient(red, blue);
+    max-width: 1152px;
+    margin: 0 auto;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+    
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.links {
+    width: 375px;
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    color: #282828;
+}
+
+/* .links a:hover {} */
+
+.links a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 201px;
+}
+img{
+    border-radius: 200px;
+
+}
+
+
+.logo1 {
+    display: none;
+}
+
+.section {
+    margin-top: 111px;
+}
+
+.section_block {
+    margin: 0 15px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_block h2 {
+    font-size: 53px;
+    color: white;
+}
+
+.section_block p {
+    font-size: 36px;
+    line-height: 100px;
+    color: white;
+}
+
+.section_block__img img {
+    width: 280px;
+    height: 40%;
+}
+
+.hobby {
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+    font-size: 50px;
+    color: white;
+
+}
+
+.hobby_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hobby_block1 {
+    margin: 40px 50px;
+    width: 250px;
+    height: 190px;
+    text-align: center;
+    color: white;
+}
+
+.hobby_block1 img:hover {
+    width: 150px;
+}
+.musa-1{
+    font-size: 39px;
+}
+.musa-2{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ /* skills start */
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0 ;
+}
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 14px;
+    background: #b13639;
+    border-radius: 3px;
+    position: relative;
+    animation: FillBars  2,5s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translate(50%);
+}
+.skill-per::after{
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px ;
+}
+@keyframes FillBars{
+    form{
+        width: 0 ;
+    }
+    to{
+        width: 100%;
+    }
+}
+/* skills end */
+.musa-4{
+    display: flex;
+    justify-content: center;
+}
+
+.musa11{
+    margin: 15px 10px 0 15px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.musa11 img{
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+@media all and(min-width: 1030){
+    .section_block__img aos-init aos-animate{
+        align-items: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+@media all and (min-width: 769px){
+    .section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+@media all and (max-width: 769px){
+    .container__nav {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .links {
+        display: none;
+
+    }
+    .logo1 {
+        display: block  ;
+    }
+} 
+@media all and (max-width:426px){
+    .last   {
+        display: none;
+    }
+    .links {
+        display: none;
+    }
+    .musa-1 {
+        font-size: 45px;
+    }
+}
+
+
